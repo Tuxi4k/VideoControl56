@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/topNav.css" />
+    <link rel="stylesheet" href="/styles/serviceArea.css" />
+    <link rel="stylesheet" href="/styles/advantages.css" />
+    <link rel="stylesheet" href="/styles/formBlock.css" />
+    <link rel="stylesheet" href="/styles/question.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header-core">
+        <div class="header-first">
+          <img src="/imgs/header/logo.png" />
+          <div>
+            <a href="#">Каталог товаров</a>
+            <a href="#">Часто задаваемые вопросы</a>
+          </div>
+        </div>
+        <div class="header-second">
+          <div>
+            <a>+7 (912) 343-17-98</a>
+            <a>support@videokontrol56.ru</a>
+          </div>
+          <button><img src="/imgs/header/hide.svg" /></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- topNav -->
+      <div class="top-nav">
+        <div class="top-nav-core container">
+          <div class="top-nav-first">
+            <div class="top-nav-first-texts">
+              <h3>Видеоконтроль56.рф</h3>
+              <p>Установка, настройка, обслуживание, продажа</p>
+            </div>
+            <a href="#"
+              ><div class="top-nav-get">
+                <p>Сделать заказ</p>
+                <img src="/imgs/topNav/darkArrow.svg" /></div
+            ></a>
+          </div>
+          <div class="top-nav-second">
+            <img src="/imgs/topNav/bigLogo.png" />
+          </div>
+        </div>
+      </div>
+      <!-- serviceArea -->
+      <div class="service-area">
+        <div class="service-area-core">
+          <div class="service-area-first">
+            <h1>Зона нашего обслуживания — город Оренбург</h1>
+            <p>
+              Наша компания оказывает полный комплекс услуг по установке и
+              обслуживанию систем видеонаблюдения в Оренбурге
+            </p>
+          </div>
+          <div class="service-area-second">
+            <img src="/imgs/serviceArea/camera.png" />
+          </div>
+          <img
+            src="/imgs/serviceArea/Arrow 1.svg"
+            class="service-area-first-arrow"
+          />
+          <img
+            src="/imgs/serviceArea/Arrow 2.svg"
+            class="service-area-second-arrow"
+          />
+        </div>
+      </div>
+      <!-- advantages -->
+      <div class="advantages">
+        <div class="advantages-core container">
+          <p>Наши подходы к вашей безопасности</p>
+          <div class="advantages-blocks">
+            <!-- Проектирование -->
+            <div class="advantages-block">
+              <img src="/imgs/advantages/craneBuilding.svg" />
+              <h6>Проектирование</h6>
+              <p>Разработка оптимального плана размещения камер.</p>
+            </div>
+            <!-- Настройка -->
+            <div class="advantages-block">
+              <img src="/imgs/advantages/settins.svg" />
+              <h6>Настройка</h6>
+              <p>Обеспечим четкую картинку и удаленный доступ со смартфона.</p>
+            </div>
+            <!-- Обслуживание -->
+            <div class="advantages-block">
+              <img src="/imgs/advantages/oilCan.svg" />
+              <h6>Обслуживание</h6>
+              <p>Качественное обслуживание систем видеонаблюдения.</p>
+            </div>
+            <!-- Тех. поддержка -->
+            <div class="advantages-block">
+              <img src="/imgs/advantages/support.svg" />
+              <h6>Тех. поддержка</h6>
+              <p>Круглосуточная техническая поддержка</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- form -->
+      <div class="form-block">
+        <div class="form-block-core container">
+          <div>
+            <div class="form-block-first">
+              <h3>Сделать заказ</h3>
+              <p>
+                Отправьте заявку, заполнив форму справа, мы рассмотрим вашу
+                кандидатуру и свяжемся с вами в течении 24 часов.
+              </p>
+            </div>
+            <div class="form-block-second">
+              <h3>Либо</h3>
+              <p>Позвоните на номер <br />+7 (912) 343-17-98</p>
+            </div>
+          </div>
+          <div class="form-input">
+            <div class="form-input-core">
+              <form
+                id="contactForm"
+                action="http://192.168.1.122:3000/client/sendForm"
+                method="POST"
+              >
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="fio"
+                    name="fio"
+                    placeholder="ФИО"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Номер телефона"
+                    required
+                  />
+                </div>
+                <div class="form-twice-group">
+                  <div>
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      placeholder="Адрес"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      id="house"
+                      name="house"
+                      placeholder="Дом"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    required
+                  />
+                  <span>Согласен(а) наобработку персональных данных</span>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <div>
+                    <span>ОТПРАВИТЬ</span>
+                    <img src="/imgs/form/right-arrow.svg" />
+                  </div>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- question -->
+      <div class="question">
+        <h6>Остались вопросы?</h6>
+        <div class="questions-div">
+          <div>
+            <p>Сколько стоит система видеонаблюдения?</p>
+            <img src="/imgs/question/link.svg" />
+          </div>
+          <div>
+            <p>Почему стоит выбрать регистратор?</p>
+            <img src="/imgs/question/link.svg" />
+          </div>
+          <div>
+            <p>Можно ли сохранять записи камер вне объекта?</p>
+            <img src="/imgs/question/link.svg" />
+          </div>
+          <div>
+            <p>Аналог или IP?</p>
+            <img src="/imgs/question/link.svg" />
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-core container">
+          <div class="footer-first">
+            <div class="footer-first-logo">
+              <img src="/imgs/footer/logo.png" />
+              <p>Видеоконтроль56.РФ</p>
+            </div>
+            <p class="footer-first-par">
+              ООО «ВидеоКонтроль56.РФ». Все права защищены.
+            </p>
+          </div>
+          <div class="footer-second">
+            <div class="footer-group-one">
+              <h6>КОМПАНИЯ</h6>
+              <div></div>
+              <p>Сделать заказ</p>
+            </div>
+            <div class="footer-group-two">
+              <h6>ТОВАРЫ</h6>
+              <div></div>
+              <p>Открыть каталог</p>
+            </div>
+            <div class="footer-group-three">
+              <h6>ТЕХ. ПОДДЕРЖКА</h6>
+              <div></div>
+              <p>support@videokontrol56.ru</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
